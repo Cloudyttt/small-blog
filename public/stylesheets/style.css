@@ -22,6 +22,7 @@ nav {
     text-transform: uppercase;
     width: 9em;
     text-align: right;
+    /* background-color: #eeeeee */
 }
 nav a {
     display: block;
@@ -39,11 +40,11 @@ article {
     padding-top: .5em;
 }
 article a {
-    color: #dd0000;
+    color: darken(#428bca, 6.5%);
     text-decoration: none;
 }
 article a:hover {
-    color: #333333;
+    color: #dd0000;
     text-decoration: underline;
 }
 .info {
@@ -111,7 +112,7 @@ article a:hover {
 }
 
 .tag {
-    background-color: #ff0000;
+    background-color: #5cb85c;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;

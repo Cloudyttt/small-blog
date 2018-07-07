@@ -1,0 +1,12 @@
+[Sat Jul 07 2018 11:31:20 GMT+0800 (中国标准时间)]/upload
+PayloadTooLargeError: Payload Too Large
+    at limit (E:\blog\node_modules\connect\lib\middleware\limit.js:56:41)
+    at multipart (E:\blog\node_modules\connect\lib\middleware\multipart.js:103:5)
+    at E:\blog\node_modules\connect\lib\middleware\bodyParser.js:64:9
+    at urlencodedParser (E:\blog\node_modules\body-parser\lib\types\urlencoded.js:95:37)
+    at E:\blog\node_modules\connect\lib\middleware\bodyParser.js:62:7
+    at jsonParser (E:\blog\node_modules\body-parser\lib\types\json.js:107:37)
+    at Object.bodyParser [as handle] (E:\blog\node_modules\connect\lib\middleware\bodyParser.js:60:5)
+    at next (E:\blog\node_modules\connect\lib\proto.js:174:15)
+    at methodOverride (E:\blog\node_modules\method-override\index.js:79:5)
+    at E:\blog\node_modules\connect\lib\middleware\methodOverride.js:41:7

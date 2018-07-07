@@ -5,6 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
     <title>Blog</title>
 </head>
@@ -14,21 +15,21 @@
     <h1><%= title %></h1>
 </header>
 <nav>
-    <span><a title="主页" href="/">主页</a></span>
-    <span><a title="存档" href="/archive">存档</a></span>
-    <span><a title="标签" href="/tags">标签</a></span>
-    <span><a title="友情链接" href="/links">友情链接</a></span>
+    <span><a class="nav nav-tabs" title="主页" href="/">主页</a></span>
+    <span><a class="nav nav-tabs" title="存档" href="/archive">存档</a></span>
+    <span><a class="nav nav-tabs" title="标签" href="/tags">标签</a></span>
+    <span><a class="nav nav-tabs" title="友情链接" href="/links">友情链接</a></span>
     <% if (user) { %>
-    <span><a title="上传" href="/upload">上传</a></span>
-    <span><a title="发表" href="/post">发表</a></span>
-    <span><a title="登出" href="/logout">登出</a></span>
+    <span><a class="nav nav-tabs" title="上传" href="/upload">上传</a></span>
+    <span><a class="nav nav-tabs" title="发表" href="/post">发表</a></span>
+    <span><a class="nav nav-tabs" title="登出" href="/logout">登出</a></span>
     <% } else { %>
-    <span><a title="登录" href="/login">登录</a></span>
-    <span><a title="注册" href="/reg">注册</a></span>
+    <span><a class="nav nav-tabs" title="登录" href="/login">登录</a></span>
+    <span><a class="nav nav-tabs" title="注册" href="/reg">注册</a></span>
     <% } %>
     <span>
       <form action="/search" method="get">
-        <input type="text" name="keyword" placeholder="SEARCH" class="search">
+        <input class="form-control" style="margin-top:20px"type="text" name="keyword" placeholder="SEARCH" class="search">
       </form>
     </span>
 </nav>
